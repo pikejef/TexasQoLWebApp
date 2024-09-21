@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>The Texas Countywide Quality-of-Life Index Map</title>
+
+  <style>
+    h1, h2 {
+  text-align: center;
+}
+
+  p {
+  text-align: center;
+  overflow: hidden;
+}
+
+#mapframe {
+  height:725px; width:1550px;
+  overflow: hidden;
+}
+
+table {
+font-family: arial, sans-serif;
+border-collapse: collapse;
+width: 100%;
+}
+
+td, th {
+border: 1px solid #dddddd;
+text-align: left;
+padding: 8px;
+}
+
+tr:nth-child(even) {
+background-color: #dddddd;
+}
+
+.sourcesCited {
+text-indent: -36px; padding-left: 36px;
+}
+
+</style>
+
+</head>
+
+<body>
+  <nav>
+    <a href="./TexasCountiesQoLWebHTMLPage.html">
+      Web Map & Description</a>
+  <a href="./DataModule.html">
+      Data</a>
+  <a href="./IndexScoreCalculation.html">
+      Index Score Calculation</a>
+  </nav>
+
+  <h1><ins>The Texas Countywide Quality-of-Life Index Map</ins></h1>
+
+  <div id="Description"></div>
+    <h2>Description</h2>
+ 
+      <p>This map serves as an interactive, web-based tool that allows users to form a general idea about which counties and
+       regions of Texas may foster a suitable living environment and enhance one's well-being.
+       <br/><br/>
+      Each county has been given a calculated quality of life index score, allowing for direct comparison when
+      considering the overall quality-of-life. Refer to the <i>legend</i> to see how well each county measures up
+      in its quality-of-life index score! Each classification group was determined using the Natural Breaks (Jenks) method. </p>
+
+    <p><iframe id="mapframe" src="./TexasCountywideQoLWebMap.html" 
+        ></iframe></p>
+    <p>Geocoding API provided by © MapTiler, 2024.</p>
+    <br/>
+        <p>Various factors may be considered when assessing the quality of life in a geographic area. Specifically, we incorporated the following variables:</p>
+
+        <table>
+          <tr>
+            <th>Variable</th>
+            <th>Type</th>
+            <th>Year</th>
+          </tr>
+          <tr>
+            <td>Crimes</td>
+            <td>Count</td>
+            <td>2022</td>
+          </tr>
+          <tr>
+            <td>Deaths</td>
+            <td>Count</td>
+            <td>2020</td>
+          </tr>
+          <tr>
+            <td>Hospitals</td>
+            <td>Count</td>
+            <td>2022</td>
+          </tr>
+          <tr>
+            <td>Median Household Income</td>
+            <td>Cost</td>
+            <td>2022</td>
+          </tr>
+          <tr>
+            <td>School Districts</td>
+            <td>Count</td>
+            <td>2024</td>
+          </tr>
+          <tr>
+            <td>State Parks</td>
+            <td>Count</td>
+            <td>2024</td>
+          <tr>
+            <td>Unemployed</td>
+            <td>Count</td>
+            <td>2020</td>
+          </tr>
+          <tr>
+            <td>Weather and Climate Risk Score</td>
+            <td>Index score</td>
+            <td>2023</td>
+          </tr>
+          </tr>
+        </table>
+
+        
+    <p>Factors measured as a <i>count</i> were normalized <b> per capita</b>, based on county populations in 2022. </p> 
+        
+    <p> Information on the data and its sources used in the creation of our web application and MCDM formula can be found in the 
+      <a href="C:/Users/faceb/OneDrive - Texas A&M University/Texas A&M - Spring 2024 Semester/GEOG 478/Group Project/DataSourcesModule.html">Data</a> module of this web page.
+    For an explanation of how the quality of life index score was calculated, access the Index Score Calculation module.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>

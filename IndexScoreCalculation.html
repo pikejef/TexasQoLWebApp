@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <title>Data Sources</title>
+
+  <style>
+    .stepsClarification {
+        font-size:16px;
+    }
+
+    p {
+       font-size: 14px; 
+    }
+  </style>
+
+</head>
+<body>
+  <nav>
+    <a href="./TexasCountiesQoLWebHTMLPage.html">
+      Web Map & Description</a>
+    <a href="./DataModule.html">
+      Data</a>
+    <a href="./IndexScoreCalculation.html">
+      Index Score Calculation</a>
+  </nav>
+
+  <h1>Calculation: Quality of Life Index Score</h1>
+<h3>Step 1: Weighted Model</h3>
+
+<p> The calculation process followed four steps. </p>
+ <p> The quality of life index score for each Texas county was calculated using a multi-criteria decision-making equation.
+    Each of the 8 variables factored in our equation were ranked and then given a <b>weight</b> based on their magnitude of
+    importance respectively held in characterizing the quality of life in an area. A weight value for each of the variables was
+    designated after group discussion. The weights for all variables would cumulatively sum to 1. </p>
+
+    <img src="Step_1.png" alt="Step 1">
+
+    <br></br>
+    <br></br>
+
+    <div class="stepsClarification">
+    <p> <ins><b>Steps 2-4</b> will include visuals of computations performed for <i>Anderson</i> and <i>Andrews</i> County as an example.</ins> </p>
+    </div>
+
+<h3>Step 2: Normalization</h3>
+    <p> 6 out of our 8 variables were counts, and these values for each county were normalized per capita. For each of these 6 variables, 
+    each Texas county--which there are 254 of--was given a rank from 1-254 based on its normalized value. </p>
+    
+    <img src="Step_2.png" alt="Step 2">
+
+    <br></br>
+
+<h3>Step 3: Rank & Weighted Rank</h3>
+    <p> This ranked value would then be multiplied by the weight designated for the variable being measured.
+    Therefore, values with a higher rank <ins>in this step</ins> of the calculation process would give <b>more</b> weight to a county. </p>
+
+    <img src="Step_3.png" alt="Step 3">
+
+    <br></br>
+
+<h3>Step 4: Result</h3>
+    <p> Finally, each of the 8 weighted rank values for a county would then be summed up. The result would be the
+        quality of life index score for that county. Counties with a higher quality of life index score would be considered
+        better than those with a lower score.
+
+    <img src="Step_4.png" alt="Step 4">
+
+
+<!-- Provide Visuals & Example, and reference that calculations were made in Excel -->
